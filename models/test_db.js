@@ -1,3 +1,4 @@
+
 //引入 mongoose
 import mongoose from 'mongoose'
 
@@ -39,6 +40,7 @@ testModel.find({age:20},function(error,data){
     if(error){
         console.log('查询有错')
     }else{
+            //打印查询到的数据
         console.log(data)
     }
 })
@@ -60,5 +62,3 @@ testModel.deleteMany({age:33},function(error,data){
         console.log('删除成功');
     }
 })
-
-

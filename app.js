@@ -14,6 +14,7 @@ import chalk from 'chalk';
 
 //引入db 连接数据库
 import './mongodb/db.js'
+import './models/test_db.js'
 
 const app = express();
 
