@@ -31,5 +31,5 @@ router.get('/addresse/:address_id', Address.getAddAddressById);
 router.delete('/users/:user_id/addresses/:address_id', Address.deleteAddress);
 router.post('/users/:user_id/carts/:cart_id/orders', Order.postOrder);
 
- 
+
 export default router
