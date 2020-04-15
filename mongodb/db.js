@@ -9,17 +9,17 @@ import chalk from 'chalk';
 // config 文件夹下的 default.js 
 
 // module.exports = {
-// 	port: parseInt(process.env.PORT, 10) || 8888,
-// 	url: 'mongodb://localhost:27017/elm',
-// 	session: {
-// 		name: 'SID',
-// 		secret: 'SID',
-// 		cookie: {
-// 			httpOnly: true,
-// 	    secure:   false,
-// 	    maxAge:   365 * 24 * 60 * 60 * 1000,
-// 		}
-// 	}
+//     port: parseInt(process.env.PORT, 10) || 8888,
+//     url: 'mongodb://localhost:27017/elm',
+//     session: {
+//         name: 'SID',
+//         secret: 'SID',
+//         cookie: {
+//             httpOnly: true,
+//         secure:   false,
+//         maxAge:   365 * 24 * 60 * 60 * 1000,
+//         }
+//     }
 // }
 mongoose.connect(config.url, {useMongoClient:true});
 mongoose.Promise = global.Promise;
@@ -28,7 +28,7 @@ const db = mongoose.connection;
 
 db.once('open' ,() => {
     //终端打印绿色的提示信息
-	console.log(
+    console.log(
     chalk.green('连接数据库成功')
   );
 })
